@@ -81,3 +81,19 @@ nav .dropdown>.dropdown-list a:hover {
 }
 
 /* dropdown  END*/
+
+.front-input {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50%;
+}
+
+.front-input button{
+    width: 50px;
+}
+
+form {
+    display:flex;
+    justify-content: flex-end;
+}
