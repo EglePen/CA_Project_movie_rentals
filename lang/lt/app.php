@@ -72,6 +72,7 @@ return [
 
     //S
     'search' => 'ieškoti',
+    'search_for_a_movie' => 'ieškoti filmo',
     'sign_in' => 'prisijungti',
     'submit' => 'pateikti',
 
