@@ -30,10 +30,13 @@ Route::get('/lang/{locale}', function ($locale) {
     return redirect()->back();
 });
 
+//
+
 
 //Public routes, accesible to anyone
 Route::name('front.')->group(function () {
     Route::get('/', [FrontHomeController::class, 'index'])->name('home');
+    Route::get('search', [FrontMovieController::class, 'search'])->name('search');
     Route::resource('movies', FrontMovieController::class)->only(['index', 'show']);
 });
 
