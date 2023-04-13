@@ -29,4 +29,13 @@ class FrontMovieController extends Controller
         $model = $movie;
         return view('front.movies.show', compact('model'));
     }
+    public function search(Request $request) 
+    {
+        if($request->search){
+            $searchModels = Movie::where('title', 'LIKE', '%'.$request->search.'%')->get();
+            return view('front.search', compact('searchModels'));
+        }else {
+            return redirect()->back()->with('message', 'Empty Search');
+        }
+    }
 }
