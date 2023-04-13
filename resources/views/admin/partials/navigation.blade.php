@@ -6,6 +6,12 @@
     </ul>
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+            <a class="nav-link" href="/lang/en">[EN]</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/lang/lt">[LT]</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" data-widget="navbar-logout" href="{{ route('admin.logout') }}" role="button">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 @langTitle('app.logout')

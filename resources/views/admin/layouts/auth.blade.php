@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     @include('admin.partials.head')
 </head>
 
 <body class="hold-transition login-page">
+<header>
+    <nav class="navbar navbar-expand">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/lang/en">[EN]</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lang/lt">[LT]</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
     @if ($errors->any())
     <div class="alert alert-danger">

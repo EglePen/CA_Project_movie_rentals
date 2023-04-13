@@ -14,9 +14,9 @@
 <div class="input-group">
     <div class="custom-file">
         <input multiple type="file" class="custom-file-input" name="{{$inputName}}" id="{{$inputId}}">
-        <label class="custom-file-label" for="{{$label}}">Pasirinkti nuotrauką</label>
+        <label class="custom-file-label" for="{{$label}}">@lang('app.choose_image')</label>
     </div>
     <div class="input-group-append">
-        <span class="input-group-text">Įkelti</span>
+        <span class="input-group-text">@langTitle('app.upload')</span>
     </div>
 </div>

@@ -8,9 +8,12 @@ return [
     'actors' => 'aktoriai',
 
     //B
+    'browse' => 'naršyti',
 
     //C
+    'choose_image' => 'pasirinkti nuotrauką',
     'countries' => 'šalys',
+    'cover-image' => 'Viršelio nuotrauka',
     'created_at' => 'sukurta',
 
     //D
@@ -35,6 +38,7 @@ return [
 
     //I
     'image' => 'nuotrauka',
+    'images' => 'nuotraukos',
 
     //L
     'languages' => 'kalbos',
@@ -67,6 +71,7 @@ return [
     'runtime' => 'trukmė',
 
     //S
+    'search' => 'ieškoti',
     'sign_in' => 'prisijungti',
     'submit' => 'pateikti',
 
@@ -75,4 +80,5 @@ return [
 
     //U
     'updated_at' => 'atnaujinta',
+    'upload' => 'įkelti',
 ];

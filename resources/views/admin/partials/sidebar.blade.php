@@ -15,7 +15,7 @@
 
         <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
-                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control form-control-sidebar" type="search" placeholder="@lang('app.search')" aria-label="Search">
                 <div class="input-group-append">
                     <button class="btn btn-sidebar">
                         <i class="fas fa-search fa-fw"></i>
@@ -29,7 +29,7 @@
                 <li class="nav-header"> @langTitle('app.data_tables')</li>
                 <li class="nav-item">
                     <a href="{{ route('admin.movies.index') }}" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <i class="fa-solid fa-book pr-2"></i>
                         <p>
                             @langTitle('app.movies')
                         </p>
@@ -37,7 +37,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.actors.index') }}" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <i class="fa-solid fa-book pr-2"></i>
                         <p>
                             @langTitle('app.actors')
                         </p>
@@ -45,7 +45,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.countries.index') }}" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <i class="fa-solid fa-book pr-2"></i>
                         <p>
                             @langTitle('app.countries')
                         </p>
@@ -53,7 +53,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.languages.index') }}" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <i class="fa-solid fa-book pr-2"></i>
                         <p>
                             @langTitle('app.languages')
                         </p>
@@ -61,17 +61,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.genres.index') }}" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <i class="fa-solid fa-book pr-2"></i>
                         <p>
                             @langTitle('app.genres')
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ route('admin.logout') }}" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
-                        <p>
-                            @langTitle('app.logout')
                         </p>
                     </a>
                 </li>

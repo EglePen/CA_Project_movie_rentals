@@ -8,9 +8,12 @@ return [
     'actors' => 'actors',
 
     //B
+    'browse' => 'browse',
 
     //C
+    'choose_image' => 'choose image',
     'countries' => 'countries',
+    'cover-image' => 'cover image',
     'created_at' => 'created at',
 
     //D
@@ -35,6 +38,7 @@ return [
 
     //I
     'image' => 'image',
+    'images' => 'images',
 
     //L
     'languages' => 'languages',
@@ -60,13 +64,14 @@ return [
 
     //R
     'rating' => 'rating',
-    'release_date' => 'release_date',
+    'release_date' => 'release date',
     'register' => 'register',
     'registration_successful' => 'registration successful',
     'registration_unsuccessful' => 'registration unsuccessful',
     'runtime' => 'runtime',
 
     //S
+    'search' => 'search',
     'sign_in' => 'sign in',
     'submit' => 'submit',
 
@@ -75,4 +80,5 @@ return [
 
     //U
     'updated_at' => 'updated at',
+    'upload' => 'upload',
 ];

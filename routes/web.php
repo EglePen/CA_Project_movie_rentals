@@ -23,6 +23,14 @@ use App\Http\Controllers\Admin\Auth\RegistrationController;
 |
 */
 
+// Language route
+
+Route::get('/lang/{locale}', function ($locale) {
+    session()->put('locale', $locale);
+    return redirect()->back();
+});
+
+
 //Public routes, accesible to anyone
 Route::name('front.')->group(function () {
     Route::get('/', [FrontHomeController::class, 'index'])->name('home');

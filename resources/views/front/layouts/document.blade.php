@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 
 <head>
     @include('front.partials.head')
