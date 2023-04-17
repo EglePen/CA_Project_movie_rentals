@@ -1,6 +1,6 @@
 :root {
- --black: #1a1a1d;
- --grey: #4e4e50;
+ --black: #363636;
+ --grey: #d3d3d3;
  --dark-red: #6f2232;
  --red: #950740;
  --light-red: #C3073F;
@@ -25,7 +25,7 @@
 
 body {
     min-height: 100vh;
-    background-color: var(--black);
+    background-color: whitesmoke;
     color: var(--white);
 }
 
@@ -164,7 +164,7 @@ header {
     height: 100%;
     border: none;
     outline: none;
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-s);
     padding: 10px 0;
 }
 
@@ -173,8 +173,9 @@ section {
 }
 section div.movie-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    color: black;
 }
 
 article.movie-card img {
@@ -182,8 +183,77 @@ article.movie-card img {
     width: 100%;
     object-fit: cover;
     object-position: left top;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-.movie-card {
-background-color: var(--grey);
+
+article.movie-card {
+    display: grid;
+    font-size: 1.1em;
+    line-height: 1.2;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px 0px #d3d3d3;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    text-align: center; 
+    height: 650px;
+    max-width: 350px;
+}
+
+article.movie-card h2{
+    color: var(--dark-red);
+}
+.btn-more a{
+    text-decoration: none;
+    border: solid 2px var(--dark-red);
+    border-radius: 18px;
+    padding: 8px;
+    color: var(--dark-red);
+    font-size: var(--font-size-xs);
+    text-align: center;
+    margin: 10px;
+    transition: 500ms;
+}
+.btn-more {
+    border: none;
+    background: transparent;
+    text-align: center;
+}
+
+.btn-more a:hover{
+    color: var(--white);
+    background: var(--dark-red);
+}
+
+article>.movie-card-body {
+    padding: 0 20px;
+    text-align: center;
+}
+
+article>.movie-card-body div.movie-card-details {
+    font-size: var(--font-size-xs);
+    line-height: 1.5;
+}
+
+article>.movie-card-body div.movie-card-details div span:nth-of-type(odd) {
+    font-weight: bold;
+}
+
+article>.movie-card-body div.movie-card-details div {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+article>.movie-card-body div.movie-card-details,
+article>.movie-card-body div.movie-card-description {
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+article>.movie-card-body div.movie-card-description {
+    font-size: 1em;
 }

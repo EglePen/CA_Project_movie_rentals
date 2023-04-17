@@ -2,57 +2,39 @@
 
 @section('content')
 <section>
-    <header>
-        <h1>
-            @langTitle('app.movies')
-        </h1>
-    </header>
-   
-    <div class="game-cards">
+    <div class="movie-cards">
         @foreach ($searchModels as $model)
    
-            <article class="game-card game-card-hover">
-                <a href="{{route('front.movies.show', $model)}}"></a>
-                <header>
-                    <img src="{{asset('storage/images/' . ($model->image ?? ''))}}">
-                    <h2>
-                        {{ ($model->title ?? '') }}
-                    </h2>
-                </header>
-                <div class="game-card-body">
-                    <div class="game-card-details">
+            <article class="movie-card">
+                <img src="{{asset('storage/images/' . ($model->image ?? ''))}}">
+                <h2>
+                    {{ ($model->title ?? '') }}
+                </h2>
+                <div class="movie-card-body">
+                    <div class="movie-card-details">
                         <div>
-                            <span>@langTitle('app.release_date')</span>
+                            <span>@langTitle('app.release_date'):</span>
                             <span>{{ ($model->release_date ?? '') }}</span>
                         </div>
                         <div>
-                            <span>@langTitle('app.runtime')</span>
+                            <span>@langTitle('app.runtime'):</span>
                             <span>{{ ($model->runtime ?? '')}} {{trans('app.min')}}</span>
                         </div>
                         <div>
-                            <span>@langTitle('app.rating')</span>
+                            <span>@langTitle('app.rating'):</span>
                             <span>{{ ($model->rating ?? '') }}</span>
                         </div>
                         <div>
-                            <span>@langTitle('app.genres')</span>
+                            <span>@langTitle('app.genres'):</span>
                             <span>{{ ($model?->genres->pluck('name')->implode(', ')) }}</span>
                         </div>
-                        <div>
-                            <span>@langTitle('app.languages')</span>
-                            <span>{{ ($model?->languages->pluck('name')->implode(', ')) }}</span>
-                        </div>
-                        <div>
-                            <span>@langTitle('app.countries')</span>
-                            <span>{{ ($model?->countries->pluck('name')->implode(', ')) }}</span>
-                        </div>
                     </div>
-                    <div class="game-card-description">
-                        {{ ($model->description ?? '') }}
-                    </div>
+                    <button class="btn-more">
+                        <a href="{{route('front.movies.show', $model)}}">@lang('app.see_more')</a>
+                    </button>
                 </div>
             </article>
         @endforeach
-
     </div>
 </section>
 @endsection
