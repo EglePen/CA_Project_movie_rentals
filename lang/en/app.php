@@ -73,6 +73,7 @@ return [
     //S
     'search' => 'search',
     'search_for_a_movie' => 'search for a movie',
+    'see_more' => 'see more',
     'sign_in' => 'sign in',
     'submit' => 'submit',
 
