@@ -7,7 +7,7 @@
 
 <body>
     <header>
-        @include('front.partials.navigation')
+        @include('front.partials.header')
     </header>
     
     <main>
@@ -17,6 +17,8 @@
     <footer>
         @include('front.partials.footer')
     </footer>
+
+    @include('front.partials.javascripts')
 </body>
 
 </html>
